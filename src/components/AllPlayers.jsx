@@ -26,6 +26,7 @@ export default function AllPlayer() {
        {/* <pre>{JSON.stringify(players, null, 2)} </pre>  */}
        <ul>
          {players.map(player => 
+         <div className="wholeAssCard">
           <div className="card" key={player.id}>
              <img className='playerImage' src={player.imageUrl}/>
               <div className="quickDet">
@@ -36,6 +37,8 @@ export default function AllPlayer() {
                 <button className="deleteBTN">DELETE</button>
               </div>         
             </div>
+         </div> 
+          
 
           )} 
        </ul>
